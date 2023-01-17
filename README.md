@@ -48,6 +48,9 @@ We have the following widgets:
 ### Parameters
 We also use the same parameters as the widget [Text](https://api.flutter.dev/flutter/widgets/Text-class.html) from 'package:flutter/material.dart', so if you need to customize, just pass the parameters as usual
 
+### Fit
+You can use the parameter fit, passing a [BoxFit](https://api.flutter.dev/flutter/painting/BoxFit.html) enum. When passing, the text will be wrapped by a [FittedBox](https://api.flutter.dev/flutter/widgets/FittedBox-class.html) class
+
 ### Locale
 You can use your locale using the parameter `textKey` or using the constructor `DisplayLargeText.key`.<br>
 ```dart

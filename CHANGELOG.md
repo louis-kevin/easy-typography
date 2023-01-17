@@ -1,3 +1,7 @@
+## 0.1.2
+
+* Fix parameter fit
+
 ## 0.1.1
 
 * Added Examples
