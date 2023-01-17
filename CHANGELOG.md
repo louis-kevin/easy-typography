@@ -1,3 +1,5 @@
-## 0.0.1
+## 0.1.0
 
-* Added typography files
+* Added typography widgets
+* Added custom locales
+* Created generator for typography tokens
