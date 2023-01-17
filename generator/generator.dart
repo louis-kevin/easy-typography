@@ -35,7 +35,7 @@ const attributeNameKey = '{{attributeName}}';
 
 void main() async {
   var path = p.join('lib', folderName);
-  var dummyPath =  p.join('lib', dummy);
+  var dummyPath =  p.join('generator', dummy);
   var directory = Directory(path);
   if (directory.existsSync()) directory.deleteSync(recursive: true);
   directory.createSync();
