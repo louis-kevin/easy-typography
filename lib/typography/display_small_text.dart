@@ -19,6 +19,7 @@ class DisplaySmallText extends BaseText {
     super.textWidthBasis,
     super.textColor,
     super.textKey,
+    super.fit,
   }) : super(text);
 
   const DisplaySmallText.key(
@@ -37,6 +38,7 @@ class DisplaySmallText extends BaseText {
     super.textWidthBasis,
     super.textColor,
     super.text,
+    super.fit,
   }) : super.key(textKey);
 
   @override
