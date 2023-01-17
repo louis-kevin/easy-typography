@@ -18,7 +18,7 @@ class BaseTextLocale {
   }
 
   localize(String key) {
-    if(locale == null) return key;
+    if (locale == null) return key;
 
     return locale!.localize(key);
   }

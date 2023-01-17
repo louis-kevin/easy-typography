@@ -8,9 +8,7 @@ class MyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-        body: BodyLargeText('my text')
-    );
+    return const Scaffold(body: BodyLargeText('my text'));
   }
 }
 
@@ -71,21 +69,21 @@ abstract class BaseText extends StatelessWidget {
 
   TextStyle? buildTextStyle(context);
 
-  String buildText(){
+  String buildText() {
     var finalText = text;
 
-    if(text == null && textKey != null){
+    if (text == null && textKey != null) {
       finalText = BaseTextLocale().localize(textKey!);
     }
 
-    if(finalText == null){
+    if (finalText == null) {
       throw 'Text need a text or textKey';
     }
 
     return finalText;
   }
 
-  getTextStyle(context){
+  getTextStyle(context) {
     TextStyle? textStyle = style;
     TextStyle baseTextStyle = buildTextStyle(context) ?? const TextStyle();
     if (textColor != null && textStyle == null) {

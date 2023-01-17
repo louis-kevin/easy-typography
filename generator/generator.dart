@@ -35,7 +35,7 @@ const attributeNameKey = '{{attributeName}}';
 
 void main() async {
   var path = p.join('lib', folderName);
-  var dummyPath =  p.join('generator', dummy);
+  var dummyPath = p.join('generator', dummy);
   var directory = Directory(path);
   if (directory.existsSync()) directory.deleteSync(recursive: true);
   directory.createSync();
@@ -44,11 +44,11 @@ void main() async {
   var exportFile = 'library easy_typography;\n\n';
   var exportFilePath = p.join('lib', 'easy_typography.dart');
 
-
   for (var element in themeNames) {
     var className = element.capitalize();
-    var contents = dummyContent.replaceAll(classNameKey, className).replaceAll(
-        attributeNameKey, element);
+    var contents = dummyContent
+        .replaceAll(classNameKey, className)
+        .replaceAll(attributeNameKey, element);
     var filename = '${element.camelCaseToSnakeCase()}_text.dart';
     var filePath = p.join(path, filename);
     File(filePath).writeAsString(contents);
