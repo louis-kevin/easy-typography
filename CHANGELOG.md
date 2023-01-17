@@ -1,3 +1,7 @@
+## 0.1.3
+
+* Format and pubspec changes
+
 ## 0.1.2
 
 * Fix parameter fit
